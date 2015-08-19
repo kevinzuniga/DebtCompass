@@ -1,0 +1,27 @@
+.login_page {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 20em;
+    height: 10em;
+    margin-top: -5em;
+    margin-left: -10em;
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+}
+.login_page input {
+    outline: none;
+    border: 2px solid #284050;
+    border-radius: 10px;
+    height: 22px;
+    width: 230px;
+    margin-top: 7px;
+}
+.login_page input:focus {
+    border: 2px solid #729db2;
+    color: #fff;
+}
+.login_page h1.login_tittle {
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
