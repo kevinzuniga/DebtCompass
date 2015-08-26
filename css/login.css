@@ -19,9 +19,26 @@
 }
 .login_page input:focus {
     border: 2px solid #729db2;
-    color: #fff;
 }
 .login_page h1.login_tittle {
     margin-bottom: 0px;
     margin-top: 5px;
+}
+/** Login errors **/
+.login_errors {
+    display: none;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    width: 20em;
+    background-color: #FF9F9F;
+    z-index: 2;
+    margin-bottom: 5em;
+    margin-left: -10em;
+    border: 1px solid #8C0000;
+}
+.login_errors h1 {
+    margin: 0;
+    color: #AB0C0C;
+    font-size: 21px;
 }

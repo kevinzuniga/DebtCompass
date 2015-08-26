@@ -36,7 +36,7 @@ Loader.prototype = {
         s.type = "text/javascript";
         s.async = true;
         s.src = self.pathJs + scripts[self.loadCountJs];
-        console.log('self.pathJs: '+self.pathJs);
+        //console.log('self.pathJs: '+self.pathJs);
         var head = document.getElementsByTagName('head')[0];
         head.appendChild(s);
         s.addEventListener('load', function (e) { self.loadedJs(e,scripts); }, false);
@@ -50,7 +50,7 @@ Loader.prototype = {
         link.async = true;
         link.type = 'text/css';
         link.href = self.pathCss+stylesheets[self.loadCountCss];
-        console.log('self.pathCss: '+self.pathCss);
+        //console.log('self.pathCss: '+self.pathCss);
         link.media = 'all';
         head.appendChild(link);
         link.addEventListener('load', function (e) { self.loadedCss(e,stylesheets); }, false);
@@ -67,6 +67,7 @@ var App={
         'http://www.parsecdn.com/js/parse-1.5.0.min.js',
         'js/view/view_config.js',
         'js/view/view_login.js',
+        'js/view/view_home.js',
         'js/logic/logic_config.js',
         'js/logic/logic_login.js',
         'js/router.js'],

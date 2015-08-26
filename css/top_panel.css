@@ -1,0 +1,19 @@
+.top_panel ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    width: 45em;
+    height: 2em;
+    text-align: center;
+}
+.top_panel li {
+    float: left;
+    width: 11em;
+    border: solid 1px #985600;
+    color: white;
+    text-align: center;
+    background-color: #FFAC00;
+}
+.top_panel a {
+    color: whitesmoke;
+}

@@ -6,34 +6,31 @@ Router = Backbone.Router.extend({
     routes:{                                     // Ejemplos de coincidencias:
         ""           : "index",
         "home"           : "index",
-        "debts"      : "debts",
-        "new_debt"      : "new_debt",
+        "product_in"      : "product_in",
+        "product_out"      : "product_out",
+        "catalogue"      : "catalogue",
+        "user_history"      : "user_history",
         "login"      : "login",
-        "signup"      : "signup",
         '*path':  'defaultRoute'
     },
     index: function(){
         console.log('index***');
-        var currentUser = Parse.User.current();
-        if (currentUser) {
-            // do stuff with the user
-            console.log('current!');
-        } else {
-            // show the signup or login page
-            console.log('not current!');
-        }
+        logicConfig.setFirstConfiguration('index');
     },
-    debts: function(){
+    product_in: function(){
         console.log('debts');
     },
-    new_debts: function(){
+    product_out: function(){
         console.log('new_debts');
     },
     login: function(){
         console.log('login');
     },
-    signup: function(){
-        console.log('signup');
+    user_history: function(){
+        console.log('user_history');
+    },
+    catalogue: function(){
+        console.log('catalogue');
     },
     defaultRoute: function(){
         console.log('default');
